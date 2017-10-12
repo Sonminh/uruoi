@@ -1,0 +1,39 @@
+div.c-nav{
+	@include breakpoint1{
+		width:100%;
+	}
+	ul{
+		
+		li{
+			float:left;
+			@include breakpoint1{
+				float:none;
+				text-align: center;
+				border : 1px solid #B2B2B2;
+				border-width: 1px 0 1px 0;
+				+ li{
+					border-top:none;
+				}
+			}
+			a{
+				display:block;
+				padding:25px 18px 20px 0;
+				@include setFont(17px,#333333,400,$font-hiragino)
+				img{
+					vertical-align:text-bottom;
+				}
+				span{
+					margin-left:5px;
+				}
+				@include breakpoint1{
+					text-align: center;
+				}
+			}
+			&:last-child{
+				a{
+					padding-right:0px;
+				}
+			}
+		}
+	}
+}

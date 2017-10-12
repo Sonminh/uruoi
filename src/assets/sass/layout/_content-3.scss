@@ -1,0 +1,27 @@
+div.l-content-3{
+	margin-top:75px;
+	div.container{
+		padding:38px;
+		border: 1px solid #E4AB14;
+		@include border-box;
+		@include breakpoint1{
+			border:none;
+			@include setWidthContainer();
+		}
+		div.c-main-1{
+
+		}
+		div.c-main-2{
+			margin-top:15px;
+			@include breakpoint1{
+				margin-top:8px;
+			}
+		}
+		div.c-main-3{
+			margin-top:40px;
+			@include breakpoint1{
+				margin-top:20px;
+			}
+		}
+	}
+}

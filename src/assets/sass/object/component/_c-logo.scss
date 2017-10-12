@@ -1,0 +1,8 @@
+div.c-logo{
+	padding:14px 0;
+	img{
+	}
+	@include breakpoint1{
+		padding:24px 0;
+	}
+}

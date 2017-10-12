@@ -1,0 +1,46 @@
+div.c-info-header{
+	div.c-title-header-1{
+		margin:23px 16px;
+		border-bottom: 1px solid #BFBFBF;
+		padding-bottom:20px;
+		img{
+			float:left;
+			margin-right: 10px;
+		}
+		p{
+			float:left;
+			@include setFont(16px,#333333,500,$font-folks)
+		}
+		@include clearfix;
+		@include breakpoint1{
+			margin:12px 30px;
+			p{
+				@include setFont(0.8rem,#333333,bold,$font-folks)
+			}
+		}
+	}
+	div.c-title-header-2{
+		margin: 0 16px 23px 16px;
+		p.text-1{
+			@include setFont(13px,#333333,500,$font-hiragino)
+		}
+		p.text-2{
+			@include setFont(17px,#333333,800,$font-hiragino)
+		}
+		p.text-3{
+			@include setFont(24px,#F07D83,bold,$font-hiragino)
+		}
+		@include breakpoint1{
+			margin:23px 30px;
+			p.text-1{
+			@include setFont(0.7rem,#333333,500,$font-hiragino)
+			}
+			p.text-2{
+				@include setFont(0.8rem,#333333,800,$font-hiragino)
+			}
+			p.text-3{
+				@include setFont(1.2rem,#F07D83,bold,$font-hiragino)
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+/*============= SET BORDER RADIUS ================= */
+@mixin setBorderRadius($value)
+{
+	border-radius: $value;
+	-moz-border-radius: $value;
+	-webkit-border-radius: $value;
+    -o-border-radius: $value;
+}
+/*============== SET BOX SHADOW ================= */
+
+@mixin setBoxShaDowBottom($size,$color)
+{
+	-webkit-box-shadow: 0px $size 0px 0px $color;
+	-moz-box-shadow: 0px $size 0px 0px $color;
+     box-shadow: 0px $size 0px 0px $color;
+}
+/*============== SET BORDER BOX ================= */
+@mixin border-box(){
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+/*============== SET FONT ================= */
+@mixin setFont($fontSize, $color, $fontWeight: null, $fontFamily : null)
+{
+	color : $color;
+	font-size: $fontSize;
+	
+	@if $fontWeight != null{
+		font-weight :  $fontWeight;
+	}
+	@if $fontFamily != null{
+		font-family: $fontFamily;
+	}
+}
+/*============== COLOR A:HOVER ================= */
+
+@mixin setTextHover($color , $colorhover){
+	a{
+			color: $color;
+			&:hover{
+				color:$colorhover;
+			}
+		}
+}
+
+/*============== SET COLUMN ================= */
+
+@mixin setWidth($pColumn,$pColumnMargin)
+{
+	width : (100% -($pColumn - 1) * $pColumnMargin ) / $pColumn;
+	margin-right: $pColumnMargin;
+	&:nth-child(#{$pColumn}n)
+	{
+		margin-right: 0;
+		margin-bottom : $pColumnMargin;
+	}
+	&:last-child
+	{
+		margin-bottom : 0;
+	}
+}
+/*============== CLEAR FIX ================= */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*============== BREAK POINT================= */
+@mixin breakpoint1{
+	@media screen and (max-width: $breakpoint1)
+	{
+		@content;
+	}
+}
+
+@mixin setWidthContainer(){
+	width:100% !important;
+	padding:0 30px;
+	box-sizing:border-box;
+}

@@ -1,0 +1,53 @@
+div.l-program{
+	padding:92px 0 50px 0px;
+	div.container{
+		@include breakpoint1{
+			@include setWidthContainer();
+		}
+		div.c-box-program{
+			div.box-program-left{
+				float:left;
+				width:400px;
+				h2{
+					@include setFont(32px,#F07D83,500,$font-folks)
+					padding-bottom:26px !important;
+					@include breakpoint1{
+						display:none;
+					}
+				}
+				p{
+					@include setFont(16px,#333333,500,$font-folks)
+					@include breakpoint1{
+						@include setFont(1.6rem,#333333,500,$font-folks)
+					}
+				}
+				@include breakpoint1{
+					float:none;
+					width:100%;
+				}
+			}
+			div.box-program-right{
+				float:right;
+				padding-left:44px;
+				h2{
+					display:none;
+					@include breakpoint1{
+						display:block;
+						@include setFont(4rem,#F07D83,500,$font-folks)
+						padding-bottom:40px !important;
+					}
+				}
+				img{
+					width:100%;
+				}
+				@include breakpoint1{
+					float:none;
+					padding-left:0px;
+					width:90%;
+					padding-bottom:40px !important;
+				}
+			}
+			@include clearfix;
+		}
+	}
+}

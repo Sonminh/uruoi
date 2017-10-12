@@ -1,0 +1,89 @@
+div.l-content-1{
+	div.container{
+		@include breakpoint1{
+			@include setWidthContainer();
+		}
+		div.title-content-1{
+			h2{
+				@include setFont(32px,#F07D83,500,$font-folks);
+				margin-bottom:35px !important;
+				@include breakpoint1{
+					@include setFont(1.6rem,#F07D83,500,$font-folks);
+					margin-bottom:17.5px !important;
+				}
+			}
+		}
+		div.main-content-1{
+			div.box-content-1{
+				float:left;
+				width:310px;
+				@include border-box;
+				border : 1px solid #F07D83;
+				position:relative;
+				margin:0 35px 35px 0;
+				&:nth-child(3n){
+					margin-right:0px;
+				}
+				@include breakpoint1{
+					margin:0px;
+					&:nth-child(3n){
+						margin-right:2%;
+					}
+					@include setWidth(2,2%);
+				}
+				div.box-info-content-1{
+					padding:20px;
+					@include border-box;
+					h3{
+						@include setFont(24px,#F07D83,500,$font-folks)
+						padding-bottom:10px !important;
+						width:80%;
+						@include breakpoint1{
+							@include setFont(1.2rem,#F07D83,500,$font-folks)
+						}
+					}
+					p{
+						@include setFont(15px, #333333,400,$font-hiragino)
+						@include breakpoint1{
+							@include setFont(0.7rem,#333333,500,$font-folks)
+						}
+					}
+					@include breakpoint1{
+						padding:10px;
+					}
+				}
+				div.box-info-content-2{
+					background: #F4F4F4;
+					padding:20px;
+					img{
+						margin-right:15px;
+						vertical-align:middle;
+						@iclude breakpoint1{
+							marrign:0px;
+						}
+					}
+					p{
+						@include setFont(25px,#E4345A,500,$font-folks)
+						width:70%;
+						display:inline-block;
+						vertical-align:middle;
+						@include breakpoint1{
+							@include setFont(1.3rem,#F07D83,500,$font-folks)
+						}
+					}
+					@include breakpoint1{
+						padding:10px;
+					}
+				}
+				div.focus-content{
+					position:absolute;
+					top:-25px;
+					right:-10px;
+					img{
+					}
+				}
+			}
+			@include clearfix;
+		}
+	}
+}

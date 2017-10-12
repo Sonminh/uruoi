@@ -1,0 +1,100 @@
+.c-main-1{
+	.title-main-1{
+		h2{
+			@include setFont(22px,#E4AB14,500,$font-folks)
+			padding-bottom:25px !important;
+			@include breakpoint1{
+				@include setFont(1.1rem,#E4AB14,500,$font-folks)
+			}
+		}
+	}
+	.box-main-1{
+		padding-bottom:57px!important;
+		@include breakpoint1{
+			padding-bottom:28px!important;
+		}
+		.img-main-1{
+			float:left;
+			width:170px;
+			img{
+				width:100%;
+			}
+			@include breakpoint1{
+				width:15%;
+			}
+		}
+		.info-main-1{
+			float:left;
+			width:725px;
+			margin-left:20px;
+			@include breakpoint1{
+				width: 70%;
+			}
+			h2{
+				@include setFont(27px,#E4AB14,500,$font-folks);
+				padding-bottom:15px !important;
+				@include breakpoint1{
+					@include setFont(1.4rem,#E4AB14,500,$font-folks);
+				}
+				span{
+					display:block;
+					@include breakpoint1{
+						display:inline;
+					}
+				}
+			}
+			p{
+				@include setFont(16px,#333333,500,$font-hiragino)
+				@include breakpoint1{
+					display:none;
+				}
+			}
+		}
+		@include clearfix;
+	}
+	.info-main-2{
+		display:none;
+		@include breakpoint1{
+			display:block;
+			padding-bottom:27px !important;
+		}
+			p{
+				@include setFont(0.8rem,#333333,500,$font-hiragino)
+			}
+	}
+	.btn-main-1{
+		float:left;
+		@include breakpoint1{
+			float:none;
+		}
+		a{
+			display:block;
+			width:77px;
+			height:25px;
+			text-align: center;
+			line-height:25px;
+			background: #E4AB14;
+			@include setFont(13px,#FFFFFF,bold,$font-folks)
+			@include breakpoint1{
+				@include setFont(0.7rem,#FFFFFF,bold,$font-folks)
+				width:35px;
+				height:15px;
+				line-height:15px;
+			}
+		}
+	}
+	.text-main-1{
+		float:left;
+		margin-left:12px;
+		@include breakpoint1{
+			margin-left:0px;
+		}
+		p{
+			@include setFont(16px,#333333,400,$font-folks)
+			@include breakpoint1{
+				@include setFont(0.8rem,#333333,400,$font-folks)
+			}
+		}
+	}
+	@include clearfix;
+}

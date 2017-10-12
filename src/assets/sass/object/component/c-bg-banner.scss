@@ -1,0 +1,8 @@
+div.c-bg-banner{
+	@include breakpoint1{
+			display:none;
+	}
+	img{
+		width:100%;
+	}
+}

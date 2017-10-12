@@ -1,0 +1,95 @@
+.c-main-3{
+	.title-1-main-3{
+		h2{
+			@include setFont(13px,#FFFFFF,400,$font-folks)
+			background: #E4AB14;
+			display:inline-block;
+			padding:5px 10px !important;
+			@include breakpoint1{
+				@include setFont(0.7rem,#FFFFFF,400,$font-folks)
+			}
+		}
+		p{
+			padding-top:17px !important;
+			@include setFont(17px,#333333,400,$font-hiragino)
+			span{
+				@include setFont(17px,#E4AB14,400,$font-hiragino)
+				@include breakpoint1{
+					@include setFont(0.7rem,#E4AB14,400,$font-hiragino)
+					display:block;
+				}
+			}
+			+ p{
+				padding-top:0 !important;
+			}
+			@include breakpoint1{
+				@include setFont(0.8rem,#333333,400,$font-hiragino)
+			}
+		}
+	}
+	.title-main-3{
+		margin-top:40px !important;
+		@include breakpoint1{
+			margin-top:15px !important;
+		}
+		h2{
+			@include setFont(13px,#FFFFFF,400,$font-folks)
+			background: #E4AB14;
+			display:inline-block;
+			padding:5px 10px !important;
+			@include breakpoint1{
+				@include setFont(0.7rem,#FFFFFF,400,$font-folks)
+			}
+		}
+	}
+	.contact-main-3{
+		.phone-main-3{
+			padding-top:25px;
+			display:inline-block;
+			@include breakpoint1{
+				padding-top:12px;
+				display:block;
+			}
+			p{
+				@include setFont(16px,#E4AB14,400,$font-folks)
+				@include breakpoint1{
+					@include setFont(0.8rem,#FFFFFF,400,$font-folks)
+					// background: #E4AB14;
+				}
+				span{
+					@include setFont(27px,#E4AB14)
+					@include breakpoint1{
+						@include setFont(1.4rem,#E4AB14,400,$font-folks)
+					}
+				}
+				span.tel{
+					display:none;
+					@include breakpoint1{
+						display:inline-block;
+						@include setFont(0.7rem,#E4AB14,400,$font-folks)
+					}
+				}
+				img{
+					@include breakpoint1{
+						width:10px;
+					}
+				}
+			}
+		}
+		.time-main-3{
+			display:inline-block;
+			p{
+				@include setFont(15px,#333333,400,$font-folks)
+			}
+			margin-left:34px;
+		}
+		.address-main-3{
+			display:inline-block;
+			margin-left:25px;
+			p{
+				@include setFont(12px,#333333,400,$font-folks)
+			}
+		}
+
+	}
+}

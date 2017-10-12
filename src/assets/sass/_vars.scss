@@ -1,0 +1,28 @@
+@charset "UTF-8";
+// HTML5か否か
+$use-html5: true;
+
+// サポートブラウザの設定
+$support-ie6: false;
+$support-ie7: false;
+$support-ie8: false;
+$support-ie9: false;
+$support-mozilla: true;
+$support-webkit : true;
+$support-opera  : false;
+
+// ベンダープレフィックスの設定
+$set_prefix: -webkit-, -moz-, -ms-, '';
+
+/*======= FONT FAMILY====== */
+$font-gothic:  "游ゴシック","YuGothic", "メイリオ", "Meiryo",'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', sans-serif;
+$font-mincho:  "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E", "ＭＳ Ｐ明朝", serif;
+$font-meiryo:  "Meiryo",'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', sans-serif;
+$font-hiragino :'Hiragino Kaku Gothic Pro', sans-serif;
+$font-folks :'Folks',sans-serif;
+/*======= BODY ====== */
+$body-background : #f9f5f1;
+/*======= URL ====== */
+$url-img : 'img/';
+/*============== BREAK POINT ================= */
+$breakpoint1 : 767px;

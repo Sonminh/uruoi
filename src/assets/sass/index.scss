@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import "vars";	// 変数 Variable
+@import "functions"; // 関数等 Function
+@import "mixin/main";
+@import "common";
+/*------------------------------------------------------------
+	Top page
+------------------------------------------------------------*/
+body{
+	// background: $body-background;
+}
+
+/* ==============LAYOUT =============== */
+@import "layout/main";
+
+/* ============== OBJECT =============== */
+@import "object/component/main";
+@import "object/project/main";
+@import "object/ultility/main";
+
+/* ============== DEVICES =============== */
+@import "devices/main";
